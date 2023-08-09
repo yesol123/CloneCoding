@@ -1,0 +1,319 @@
+ul, li {
+  list-style: none;
+  font-size: 14px;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR";
+  margin: 0;
+  overflow-y: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.chatt {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.chatt img {
+  width: 20px;
+  height: 20px;
+}
+.chatt p {
+  margin: 5px;
+  text-align: right;
+  padding: 0 10px;
+  background: #fff;
+  display: inline-block;
+  line-height: 3;
+  border-radius: 20px 0px 20px 20px;
+  background-color: #faa61a;
+  border: 1px solid white;
+}
+
+.head {
+  width: 100%;
+  position: sticky;
+  background: #f9c215;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.head section {
+  display: flex;
+  justify-content: space-between;
+}
+.head section .h1 {
+  display: flex;
+  align-items: center;
+}
+.head section .h1 img {
+  width: 38px;
+  height: 51px;
+}
+.head section .h1 p {
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 700;
+}
+.head section .h2 {
+  display: flex;
+  gap: 10px;
+}
+.head section .h2 img {
+  width: 25px;
+  height: 25px;
+}
+.head section .h2 .h2e {
+  width: 38.5px;
+  height: 43px;
+}
+
+.main {
+  background: #fef5da;
+  padding-left: 10px;
+  overflow-y: scroll;
+  height: 657px;
+  padding-bottom: 20px;
+}
+.main .m1 div {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+.main .m1 div img {
+  width: 28px;
+  height: 37px;
+}
+.main .m1 div p {
+  font-size: 13px;
+  font-weight: 700;
+}
+.main .hap {
+  background: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 0 20px 20px 20px;
+  margin: 0px 5px 0 9px;
+  width: 412px;
+}
+.main .hap .m2 {
+  padding-top: 15px;
+}
+.main .hap .m2 div {
+  margin-left: 2px;
+}
+.main .hap .m2 div p {
+  font-size: 14px;
+  padding-left: 15px;
+}
+.main .hap .m3 {
+  padding-top: 20px;
+}
+.main .hap .m3 .m31 {
+  margin-left: 10px;
+}
+.main .hap .m3 .m31 p {
+  font-size: 14px;
+}
+.main .hap .m3 .m31 ul {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.main .hap .m3 .m31 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  width: 123px;
+  height: 70px;
+  text-align: center;
+}
+.main .hap .m3 .m31 ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.main .hap .m3 .m31 ul li:hover {
+  background-color: #f9c215;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.main .hap .m3 .m31 ul li img {
+  width: 30px;
+  height: 30px;
+}
+.main .hap .m3 .m31 ul li p {
+  font-size: 13px;
+}
+.main .hap .m3 .m32 {
+  margin-left: 10px;
+}
+.main .hap .m3 .m32 p {
+  font-size: 14px;
+}
+.main .hap .m3 .m32 ul {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.main .hap .m3 .m32 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  width: 123px;
+  height: 70px;
+  text-align: center;
+}
+.main .hap .m3 .m32 ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.main .hap .m3 .m32 ul li:hover {
+  background-color: #f9c215;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.main .hap .m3 .m32 ul li img {
+  width: 30px;
+  height: 30px;
+}
+.main .hap .m3 .m32 ul li p {
+  font-size: 13px;
+}
+.main .hap .m3 .m33 {
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+.main .hap .m3 .m33 p {
+  font-size: 14px;
+}
+.main .hap .m3 .m33 ul {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.main .hap .m3 .m33 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  width: 123px;
+  height: 70px;
+  text-align: center;
+}
+.main .hap .m3 .m33 ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.main .hap .m3 .m33 ul li:hover {
+  background-color: #f9c215;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.main .hap .m3 .m33 ul li img {
+  width: 30px;
+  height: 30px;
+}
+.main .hap .m3 .m33 ul li p {
+  font-size: 13px;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 700;
+  color: #757575;
+  margin-left: 11px;
+  margin-top: 5px;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  background-color: #faa61a;
+  padding: 10px 10px;
+  bottom: 0;
+}
+footer div {
+  transform: translateY(10px);
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+footer div .reset {
+  width: 30px;
+  height: 30px;
+  transform: translateY(-10px);
+}
+footer div label {
+  position: relative;
+  width: 80%;
+}
+footer div label .fb {
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+}
+footer div label .fb:nth-of-type(2) {
+  left: 25px;
+}
+footer div label input {
+  outline: 0;
+  width: 380px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: 700;
+  padding-left: 70px;
+}
+footer div label input::-moz-placeholder {
+  color: black;
+}
+footer div label input::placeholder {
+  color: black;
+}
+footer div label button {
+  background-color: #faa61a;
+  outline: none;
+  border: 0;
+}
+footer div label button img {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 20px;
+  top: 3px;
+}
+
+.time2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #757575;
+  margin-left: 11px;
+  margin-top: 5px;
+}/*# sourceMappingURL=popup.css.map */

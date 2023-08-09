@@ -1,0 +1,4058 @@
+@charset "UTF-8";
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+figure {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "kohib";
+  src: url("../KOHIBaeum.woff2");
+}
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SUITE-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.fadeIn {
+  transform: translateY(40px);
+  transition: 1.5s;
+}
+
+.fadeIn.active {
+  transform: translateY(0);
+}
+
+.fadeIn1 {
+  transform: translateY(40px);
+  transition: 1.5s;
+}
+
+.fadeIn1.active {
+  transform: translateY(0);
+}
+
+.si_ang {
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.si_ang .si_ang_1 .si_ang_2 {
+  margin: 0;
+  text-align: center;
+}
+.si_ang .si_ang_1 .si_ang_2 .comeicons {
+  width: 50px;
+  height: 50px;
+}
+.si_ang .si_ang_1 .si_ang_2 p {
+  white-space: pre-wrap;
+  font-size: 14.4px;
+  text-align: center;
+}
+
+header {
+  z-index: 3;
+  position: fixed;
+  display: flex;
+  height: 110px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-image: linear-gradient(to right, #eb6ea5 0, #e4007f 30%, #601986 70%);
+  /*첫번째 색깔을 0,두번째색깔을 30%,세번째 색을70% 그라데이션으로 넣어준다 */
+}
+header.active {
+  background: #fff;
+  background-image: none;
+}
+header section {
+  width: 94%;
+  margin: 0 auto;
+}
+header section .busanisgood {
+  position: relative;
+  left: 55px;
+  top: 40px;
+}
+header section .header1_1 {
+  font-size: 21px;
+  color: white;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+header section .header1_1 > ul {
+  display: flex;
+  width: 50%;
+  margin: 0px auto;
+}
+header section .header1_1 > ul li {
+  width: 20%;
+  position: relative;
+}
+header section .header1_1 > ul li ul {
+  display: none;
+  position: absolute;
+  top: 45px;
+  width: 100%;
+}
+header section .header1_1 > ul li ul li {
+  width: 100%;
+  padding: 0 20px;
+}
+header section .header1_1 > ul li ul li > a {
+  padding: 5px 1px;
+  font-size: 16px;
+  color: #000;
+}
+header section .header1_1 a {
+  display: block;
+  margin-left: auto;
+  color: #fff;
+}
+header section .header1_1 a:hover {
+  color: #e4007f;
+}
+header .header1_2 {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  transform: translateY(-30px);
+}
+header .header1_2 a span {
+  color: white;
+}
+
+.header1_3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  color: white;
+}
+.header1_3 a {
+  margin: 5px 10px;
+  color: #fff;
+}
+.header1_3 a:nth-of-type(7) {
+  display: none;
+}
+.header1_3 a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.sublar {
+  display: none;
+  width: 100%;
+  height: 500px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.sub_1 li a > img {
+  width: 15%;
+}
+
+.bugi_img figure img {
+  width: 100%;
+}
+.bugi_img figure img:nth-of-type(2) {
+  display: none;
+}
+.bugi_img .trans {
+  transform: translate(100px, -250px);
+  display: inline-block;
+}
+.bugi_img .trans figure {
+  padding: 5px 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.bugi_img .trans figure img {
+  width: 36.7%;
+  padding: 5px 10px;
+}
+.bugi_img .trans figure a img {
+  width: 100%;
+}
+.bugi_img button {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  border: 0;
+  border-radius: 50%;
+  transform: translateY(-350px);
+  cursor: pointer;
+}
+
+main {
+  width: 1600px;
+  margin: 0 auto;
+}
+main .guideall .guide {
+  width: 100%;
+  margin-top: 30px;
+}
+main .guideall .guide h2 {
+  text-align: center;
+}
+main .guideall .guide nav {
+  text-align: center;
+  vertical-align: center;
+}
+main .guideall .guide nav a {
+  border: 1px solid black;
+  color: black;
+  font-size: 18px;
+  margin: 2px 3px;
+  padding: 5px 12px;
+  border-radius: 80px;
+  transition: 1s;
+}
+main .guideall .guide nav a::after {
+  content: "add";
+  font-family: "material symbols outlined";
+}
+main .guideall .guide nav a:hover {
+  color: white;
+  background-color: #e4007f;
+}
+main .guideall .guide nav a span {
+  display: inline-block;
+  color: #1b8edf;
+  font-size: 10px;
+}
+main .guideall .guide nav a span:nth-of-type(2) {
+  color: black;
+  font-size: 19px;
+}
+main .guideall .guide2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+main .guideall .guide2 > div {
+  position: relative;
+  width: calc(25% - 20px);
+  margin: 0 10px;
+  transition: 0.5s;
+}
+main .guideall .guide2 > div:first-child {
+  margin-left: 0;
+}
+main .guideall .guide2 > div:last-child {
+  margin-right: 0;
+}
+main .guideall .guide2 > div:hover {
+  transform: translate(-5px, -10px);
+  border: 3px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to left, red 0%, blue 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  /*여기*/
+}
+main .guideall .guide2 .guide2_1 {
+  padding: 35px;
+  box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+main .guideall .guide2 .guide2_1 p {
+  display: flex;
+  justify-content: space-between;
+  font-family: "kohib";
+  font-size: 25px;
+  color: #585858;
+}
+main .guideall .guide2 .guide2_1 p::after {
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: "";
+  background: url("../imgs/main/ico_news.svg") no-repeat;
+  background-size: 100%;
+}
+main .guideall .guide2 .guide2_1 nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .guideall .guide2 .guide2_1 nav a {
+  width: calc(50% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 0;
+}
+main .guideall .guide2 .guide2_1 nav a:nth-of-type(1), main .guideall .guide2 .guide2_1 nav a:nth-of-type(3) {
+  margin-left: 0;
+}
+main .guideall .guide2 .guide2_1 nav a:nth-of-type(2), main .guideall .guide2 .guide2_1 nav a:nth-of-type(4) {
+  margin-right: 0;
+}
+main .guideall .guide2_2 {
+  box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+main .guideall .guide2_2 nav a {
+  padding: 30px 50px 80px;
+  display: block;
+}
+main .guideall .guide2_2 nav a p {
+  color: #585858;
+}
+main .guideall .guide2_2 nav a p:nth-of-type(1) {
+  font-family: "kohib";
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+main .guideall .guide2_2 nav a p:nth-of-type(1)::after {
+  display: block;
+  width: 60px;
+  height: 60px;
+  content: "";
+  background: url("../imgs/main/ico_calender.svg") no-repeat;
+  background-size: 100%;
+}
+main .guideall .guide2_2 nav a p:nth-of-type(2) {
+  white-space: pre-line;
+  font-size: 14px;
+}
+main .guideall .guide2_2 nav a p:nth-of-type(2)::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 1px solid #585858;
+  display: block;
+  border-radius: 50%;
+  background: url("../imgs/main/ico_arrow_right_b.svg") no-repeat;
+  background-position: center center;
+  margin-top: 20px;
+}
+main .guideall .guide2_3 {
+  box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+  background: url("../imgs/main/tour_thum.jpg") no-repeat;
+  background-size: cover;
+}
+main .guideall .guide2_3 div {
+  display: flex;
+  padding: 35px 25px;
+}
+main .guideall .guide2_3 div p {
+  color: #fff;
+  font-family: "kohib";
+  font-size: 25px;
+}
+main .guideall .guide2_3 nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+main .guideall .guide2_3 nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #585858;
+  background-color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+}
+main .guideall .guide2_4 {
+  box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+  background: url("../imgs/main/bg_mayor_ver9.jpg") no-repeat;
+  background-size: cover;
+}
+main .guideall .guide2_4 div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 25px 25px;
+}
+main .guideall .guide2_4 div p {
+  margin-top: 30px;
+  margin-bottom: 110px;
+  font-size: 22px;
+  color: whitesmoke;
+}
+main .guideall .guide2_4 div p span {
+  font-size: 13px;
+}
+main .guideall .guide2_4 div nav {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .guideall .guide2_4 div nav a {
+  display: block;
+  width: calc(50% - 2px);
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 1px;
+  padding: 3px 10px;
+}
+main .guideall .guide2_4 div nav a::after {
+  content: "add";
+  font-family: "material symbols outlined";
+}
+main .guideall .guide3 {
+  width: 100%;
+}
+main .guideall .guide3 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+main .guideall .guide3 ul li {
+  padding: 20px 20px;
+}
+main .guideall .guide3 ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .guideall .guide3 ul li a span {
+  font-size: 14px;
+}
+main .guideall .guide3 ul li img {
+  align-items: center;
+  margin-bottom: 15px;
+  transition: 1s;
+}
+main .guideall .guide3 ul li img:hover {
+  transform: rotateY(360deg);
+}
+main .information {
+  margin-top: 200px;
+}
+main .information h2 {
+  text-align: center;
+}
+main .information section div {
+  width: 30%;
+  margin: 30px 0px;
+}
+main .information section div > a {
+  display: flex;
+  justify-content: space-between;
+  font-family: "kohib";
+  color: #000;
+  font-size: 20px;
+}
+main .information section div > a > span {
+  font-family: "Noto Sans KR", sans-serif;
+  vertical-align: center;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #000;
+}
+main .information section div > a > span::after {
+  content: "add";
+  font-family: "material symbols outlined";
+}
+main .information section div > a:hover span {
+  background-color: black;
+  color: white;
+}
+main .information section .information2 {
+  padding: 0;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+main .information section .information2 li {
+  height: 195px;
+  font-size: 13px;
+  overflow: hidden;
+  padding: 30px;
+  width: 30%;
+  box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+}
+main .information section .information2 li:hover {
+  transform: translate(-5px, -10px);
+}
+main .information section .information2 li > a > p {
+  text-overflow: ellipsis;
+}
+main .information section .information2 li > a > p:nth-of-type(1) {
+  font-size: 18px;
+}
+main .information section .information2 li > a > p:nth-of-type(2) {
+  font-size: 13px;
+}
+main .information section .information2 li > a > p:nth-of-type(3) {
+  font-size: 13px;
+}
+main .information .information3 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+main .information .information3 a {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding-bottom: 50px;
+  border-bottom: 5px solid gray;
+}
+main .information .information3 a p {
+  font-family: "kohib";
+  font-size: 20px;
+  color: gray;
+}
+main .information .information3 a span {
+  vertical-align: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 5px 10px;
+  line-height: 1.4;
+  vertical-align: center;
+}
+main .information .information3 a span::after {
+  content: "add";
+  font-family: "material symbols outlined";
+}
+main .information .information3 a:hover span {
+  background-color: black;
+  color: white;
+}
+main .communication {
+  height: 1090px;
+  margin-top: 200px;
+}
+main .communication h2 {
+  text-align: center;
+  padding-top: 120px;
+  margin-bottom: 20px;
+}
+main .communication .comunication2 {
+  height: 1090px;
+  display: flex;
+  justify-content: space-between;
+}
+main .communication .comunication2 article {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+main .communication .comunication2 article p {
+  font-weight: 500;
+  font-size: 24px;
+  color: gray;
+  margin-bottom: 50px;
+}
+main .communication .comunication2 article nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .communication .comunication2 article nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .communication .comunication2 article nav a:nth-of-type(1) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_mic.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(2) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_note.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(3) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/icon_11.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(4) p {
+  padding: 10px 30px 10px 70px;
+}
+main .communication .comunication2 article nav a:nth-of-type(4) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_youtube.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(5) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_facebook.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(6) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_facebook.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(7) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_facebook.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(8) p {
+  padding: 10px 30px 10px 70px;
+}
+main .communication .comunication2 article nav a:nth-of-type(8) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_wroldExpo.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(9) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_bugi_w.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(10) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/ico_graph.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(11) p {
+  padding: 10px 30px 10px 70px;
+}
+main .communication .comunication2 article nav a:nth-of-type(11) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/icon_10.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(12) p::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/icon_10.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a:nth-of-type(13) p {
+  padding: 10px 30px 10px 120px;
+}
+main .communication .comunication2 article nav a:nth-of-type(13) p::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background: url("../imgs/main/media-hub-eng.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+main .communication .comunication2 article nav a p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 30px 10px 50px;
+  margin: 15px;
+}
+main .communication .comunication2 article nav a p::after {
+  content: "add";
+  font-family: "material symbols outlined";
+}
+main .communication .comunication2 article nav a p:hover {
+  background-color: black;
+  color: white;
+}
+main .communication .comunication2 section {
+  width: 50%;
+}
+main .communication .comunication2 section ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .communication .comunication2 section ul li {
+  width: 45%;
+  height: 60%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+main .communication .comunication2 section ul li:nth-of-type(2) {
+  position: relative;
+  top: 50px;
+}
+main .communication .comunication2 section ul li:nth-of-type(2) a div {
+  margin-bottom: 0;
+}
+main .communication .comunication2 section ul li:hover {
+  box-shadow: 0 17px 38px 20px rgba(0, 0, 0, 0.262);
+}
+main .communication .comunication2 section ul li:hover {
+  transform: translate(10px, -5px);
+  background-color: #e4007f;
+}
+main .communication .comunication2 section ul li:hover p {
+  color: #fff;
+}
+main .communication .comunication2 section ul li a div {
+  padding-top: 18px;
+  padding-left: 19px;
+  margin-bottom: 55px;
+}
+main .communication .comunication2 section ul li a div p {
+  font-size: 27px;
+  font-family: "kohib";
+}
+main .communication .comunication2 section ul li a div p span {
+  font-size: 13px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+main .communication .comunication2 section ul li:nth-of-type(1) a figure {
+  overflow: hidden;
+}
+main .communication .comunication2 section ul li:nth-of-type(1) a figure img {
+  width: 100%;
+}
+main .communication .comunication2 section ul li:nth-of-type(2) a figure {
+  overflow: hidden;
+}
+main .communication .comunication2 section ul li:nth-of-type(2) a figure img {
+  transform: translate(-152px, 10px);
+  width: 200%;
+}
+main .communication .comunication2 section ul li:nth-of-type(3) {
+  transform: translateY(0);
+}
+main .communication .comunication2 section ul li:nth-of-type(3) a figure img {
+  width: 100%;
+}
+main .communication .comunication2 section ul li:nth-of-type(4) {
+  transform: translateY(80px);
+}
+main .communication .comunication2 section ul li:nth-of-type(4) a {
+  position: relative;
+}
+main .communication .comunication2 section ul li:nth-of-type(4) a div {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  left: 30px;
+  top: 10px;
+}
+main .communication .comunication2 section ul li:nth-of-type(4) a div p {
+  font-size: 24px;
+}
+main .communication .comunication2 section ul li:nth-of-type(4) a div p span {
+  font-family: "kohib";
+  font-size: 18px;
+}
+main .communication .comunication2 section ul li:nth-of-type(4) a figure img {
+  width: 112%;
+}
+main .banner {
+  margin-top: 200px;
+}
+main .banner h2 {
+  text-align: center;
+  padding-top: 70px;
+}
+main .banner .section1 .section2 {
+  position: relative;
+}
+main .banner .section1 .section2 .ban {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 40px;
+}
+main .banner .section1 .section2 .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .banner .section1 .section2 .swiper .swiper-wrapper {
+  display: flex;
+  position: relative;
+  margin-left: -175px;
+}
+main .banner .section1 .section2 .swiper .swiper-wrapper .swiper-slide {
+  flex-shrink: 0;
+}
+main .banner .section1 .section2 .swiper .swiper-wrapper .swiper-slide img {
+  width: 896px;
+}
+main .banner .section1 .section2 .swiper-slide-next, main .banner .section1 .section2 .swiper-slide-prev {
+  opacity: 1;
+  transform: scale(0.4);
+}
+main .banner .section1 .section2 .swiper-slide-active {
+  filter: grayscale(0);
+  transform: scale(1);
+  z-index: 1;
+  opacity: 1;
+}
+main .banner .section1 .section2 .swiper-container-horizontal > .swiper-pagination-bullets,
+main .banner .section1 .section2 .swiper-pagination-custom,
+main .banner .section1 .section2 .swiper-pagination-fraction {
+  bottom: 0;
+}
+main .banner .section1 .section2 .swiper-pagination-bullet {
+  background: transparent none repeat scroll 0 0;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: inline-block;
+  height: 10px;
+  opacity: 1;
+  width: 26px;
+  transition: 0.2s;
+}
+main .banner .section1 .section2 .swiper-pagination-bullet-active {
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, #e4007e 0%, #f89482 100%) repeat scroll 0 0;
+  border: medium none;
+  height: 12px;
+  opacity: 1;
+  width: 12px;
+}
+main .alim {
+  text-align: center;
+}
+main .alim a {
+  display: inline-block;
+  margin: 30px auto;
+  position: relative;
+  border: 3px solid black;
+  padding: 10px 40px 10px 80px;
+  border-radius: 20px;
+}
+main .alim a::before {
+  position: absolute;
+  content: "";
+  width: 75%;
+  height: 75%;
+  background: url("../imgs/main/icon_11.svg") no-repeat;
+  display: block;
+  background-size: contain;
+  left: 15px;
+}
+
+.footer1 {
+  width: 100%;
+  margin: 0 auto;
+}
+.footer1 > div {
+  width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.footer1 > div .footer1_1 {
+  width: 80%;
+}
+.footer1 > div .footer1_1 li {
+  margin-left: 150px;
+  display: flex;
+}
+.footer1 > div .footer1_1 li a {
+  font-size: 16px;
+  border-right: 1px solid gray;
+  display: flex;
+  padding: 15px 20px;
+  text-align: center;
+}
+.footer1 > div .footer1_1 li a:nth-of-type(1) {
+  border-left: 1px solid gray;
+}
+.footer1 > div .footer1_1 li a::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../imgs/main/ico_arrow_down_b.png) no-repeat;
+  margin-top: 5px;
+  margin-left: 100px;
+}
+.footer1 section {
+  width: 80%;
+  margin: 40px auto;
+}
+.footer1 section .footer2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footer1 section .footer2 .footer_left {
+  width: 45%;
+  margin: 0;
+}
+.footer1 section .footer2 .footer_left ul.left1 li a {
+  font-size: 16px;
+}
+.footer1 section .footer2 .footer_left ul.left2 {
+  display: flex;
+}
+.footer1 section .footer2 .footer_left ul.left2 li {
+  margin-top: 50px;
+}
+.footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) a img {
+  width: 60%;
+}
+.footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(2) {
+  font-size: 14.4px;
+}
+.footer1 section .footer2 p.just {
+  margin-top: 50px;
+  font-size: 14.4px;
+}
+.footer1 section .footer2 .ab {
+  text-decoration: underline;
+  color: #1b8edf;
+}
+.footer1 section .footer_right {
+  width: 45%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer1 section .footer_right ul.right1 {
+  text-align: end;
+}
+.footer1 section .footer_right ul.right2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer1 section .footer_right ul.right2 li {
+  font-size: 16px;
+}
+.footer1 section .footer_right ul.right2 li:nth-of-type(2) a p {
+  font-size: 40px;
+}
+.footer1 section .footer_right ul.right3 {
+  text-align: end;
+}
+.footer1 section .footer_right ul.right3 li p {
+  font-size: 16px;
+}
+
+.sag_yanin {
+  position: fixed;
+  left: 100px;
+  top: 500px;
+  height: 300px;
+}
+.sag_yanin li {
+  background: url(../imgs/main/ico_bugi_w.svg) no-repeat;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 0.2em 0.4em;
+  border: max(2px, 0.1em) solid gray;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  margin: 40px 0;
+}
+.top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+.top a p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-size: 12px;
+}
+.top a::before {
+  content: "";
+  display: block;
+  background: url("../imgs/info/ico_scrolltop.png") no-repeat;
+  transform: translate(13px, -10px);
+  height: 50px;
+}
+
+@media screen and (max-width: 1280px) {
+  header {
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to right, #eb6ea5 0, #e4007f 30%, #601986 70%);
+    /*첫번째 색깔을 0,두번째색깔을 30%,세번째 색을70% 그라데이션으로 넣어준다 */
+  }
+  header section {
+    width: 94%;
+    margin: 0 auto;
+  }
+  header section .busanisgood {
+    position: relative;
+    left: 55px;
+    top: 40px;
+  }
+  header section .header1_1 {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+  }
+  header section .header1_1 a {
+    margin-left: auto;
+  }
+  header section .header1_1 a:hover {
+    color: #e4007f;
+  }
+  header section .header1_2 {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    transform: translateY(-30px);
+  }
+  header section .header1_3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: white;
+  }
+  header section .header1_3 a {
+    margin: 5px 10px;
+  }
+  header section .header1_3 a:nth-of-type(7) {
+    display: none;
+  }
+  header section .header1_3 a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  header a {
+    color: white;
+  }
+  .bugi_img figure {
+    width: 100%;
+  }
+  .bugi_img figure img {
+    width: 100%;
+  }
+  .bugi_img .trans {
+    transform: translate(100px, -250px);
+    display: inline-block;
+  }
+  .bugi_img .trans figure {
+    padding: 5px 10px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .bugi_img .trans figure img {
+    width: 36.7%;
+    padding: 5px 10px;
+  }
+  .bugi_img .trans figure a img {
+    width: 100%;
+  }
+  .bugi_img button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-350px);
+    cursor: pointer;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .guideall .guide {
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  main .guideall .guide h2 {
+    text-align: center;
+  }
+  main .guideall .guide nav {
+    text-align: center;
+    vertical-align: center;
+  }
+  main .guideall .guide nav a {
+    border: 1px solid black;
+    color: black;
+    font-size: 16px;
+    margin: 2px 3px;
+    padding: 5px 12px;
+    border-radius: 80px;
+    transition: 1s;
+  }
+  main .guideall .guide nav a::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .guideall .guide nav a:hover {
+    color: white;
+    background-color: #e4007f;
+  }
+  main .guideall .guide nav a span {
+    display: inline-block;
+    color: #1b8edf;
+    font-size: 10px;
+  }
+  main .guideall .guide nav a span:nth-of-type(2) {
+    color: black;
+    font-size: 19px;
+  }
+  main .guideall .guide2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .guideall .guide2 > div {
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+  main .guideall .guide2 > div:first-child {
+    margin: 5px 10px;
+  }
+  main .guideall .guide2 > div:last-child {
+    margin: 5px 10px;
+  }
+  main .guideall .guide2 > div:hover {
+    transform: translate(-5px, -10px);
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to left, red 0%, blue 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box; /*여기*/
+  }
+  main .guideall .guide2 .guide2_1 {
+    padding: 35px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .guideall .guide2 .guide2_1 p {
+    display: flex;
+    justify-content: space-between;
+    font-family: "kohib";
+    font-size: 24px;
+    color: #585858;
+  }
+  main .guideall .guide2 .guide2_1 p::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background: url("../imgs/main/ico_news.svg") no-repeat;
+    background-size: 100%;
+  }
+  main .guideall .guide2 .guide2_1 nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .guideall .guide2 .guide2_1 nav a {
+    width: calc(50% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a:nth-of-type(1), main .guideall .guide2 .guide2_1 nav a:nth-of-type(3) {
+    margin-left: 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a:nth-of-type(2), main .guideall .guide2 .guide2_1 nav a:nth-of-type(4) {
+    margin-right: 0;
+  }
+  main .guideall .guide2_2 {
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .guideall .guide2_2 nav a {
+    padding: 30px 50px 80px;
+    display: block;
+  }
+  main .guideall .guide2_2 nav a p {
+    color: #585858;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(1) {
+    font-family: "kohib";
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(1)::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background: url("../imgs/main/ico_calender.svg") no-repeat;
+    background-size: 100%;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(2) {
+    white-space: pre-line;
+    font-size: 14px;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(2)::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 1px solid #585858;
+    display: block;
+    border-radius: 50%;
+    background: url("../imgs/main/ico_arrow_right_b.svg") no-repeat;
+    background-position: center center;
+    margin-top: 20px;
+  }
+  main .guideall .guide2_3 {
+    height: 267px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    background: url("../imgs/main/tour_thum.jpg") no-repeat;
+    background-size: cover;
+  }
+  main .guideall .guide2_3 div {
+    display: flex;
+    padding: 35px 25px;
+  }
+  main .guideall .guide2_3 div p {
+    color: #fff;
+    font-family: "kohib";
+    font-size: 24px;
+  }
+  main .guideall .guide2_3 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  main .guideall .guide2_3 nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #585858;
+    background-color: white;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+  main .guideall .guide2_4 {
+    margin: 0;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    background: url("../imgs/main/bg_mayor_ver9.jpg") no-repeat;
+    background-size: cover;
+    height: 267px;
+  }
+  main .guideall .guide2_4 div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 25px 25px;
+  }
+  main .guideall .guide2_4 div p {
+    margin-top: 30px;
+    margin-bottom: 110px;
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  main .guideall .guide2_4 div p span {
+    font-size: 13px;
+  }
+  main .guideall .guide2_4 div nav {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  main .guideall .guide2_4 div nav a {
+    display: block;
+    width: calc(50% - 2px);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 1px;
+    padding: 3px 10px;
+  }
+  main .guideall .guide2_4 div nav a::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .guideall .guide3 {
+    width: 100%;
+  }
+  main .guideall .guide3 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  main .guideall .guide3 ul li {
+    padding: 20px 10px;
+  }
+  main .guideall .guide3 ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .guideall .guide3 ul li img {
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 1s;
+  }
+  main .guideall .guide3 ul li img:hover {
+    transform: rotateY(360deg);
+  }
+  main .information {
+    margin-top: 200px;
+  }
+  main .information h2 {
+    text-align: center;
+  }
+  main .information section {
+    margin: 0 auto;
+    width: 80%;
+  }
+  main .information section div {
+    width: 30%;
+    margin: 30px 0px;
+  }
+  main .information section div a {
+    display: flex;
+    justify-content: space-between;
+    font-family: "kohib";
+    font-size: 20px;
+  }
+  main .information section div a span {
+    font-family: "Noto Sans KR", sans-serif;
+    vertical-align: center;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+  }
+  main .information section div a span::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .information section div a:hover span {
+    background-color: black;
+    color: white;
+  }
+  main .information section .information2 {
+    padding: 0;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .information section .information2 li {
+    padding: 30px;
+    width: 30%;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .information section .information2 li:hover {
+    transform: translate(-5px, -10px);
+  }
+  main .information section .information2 li a p:nth-of-type(1) {
+    font-size: 18px;
+  }
+  main .information section .information2 li a p:nth-of-type(2) {
+    font-size: 13px;
+  }
+  main .information section .information2 li a p:nth-of-type(2) {
+    font-size: 13px;
+  }
+  main .information .information3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .information .information3 a {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-bottom: 50px;
+    border-bottom: 5px solid gray;
+  }
+  main .information .information3 a p {
+    font-family: "kohib";
+    font-size: 20px;
+    color: gray;
+  }
+  main .information .information3 a span {
+    vertical-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    line-height: 3%;
+    vertical-align: center;
+  }
+  main .information .information3 a span::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .information .information3 a:hover span {
+    background-color: black;
+    color: white;
+  }
+  main .communication {
+    height: 1090px;
+    margin-top: 200px;
+  }
+  main .communication h2 {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 20px;
+  }
+  main .communication .comunication2 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+  main .communication .comunication2 article {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  main .communication .comunication2 article p {
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 50px;
+  }
+  main .communication .comunication2 article nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .communication .comunication2 article nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(1) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_mic.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(2) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_note.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(3) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_11.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(4) p {
+    padding: 10px 30px 10px 70px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(4) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_youtube.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(5) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(6) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(7) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(8) p {
+    padding: 10px 30px 10px 70px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(8) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_wroldExpo.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(9) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_bugi_w.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(10) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_graph.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(11) p {
+    padding: 10px 30px 10px 70px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(11) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_10.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(12) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_10.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(13) p {
+    padding: 10px 30px 10px 120px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(13) p::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: url("../imgs/main/media-hub-eng.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 10px 30px 10px 50px;
+    margin: 15px;
+  }
+  main .communication .comunication2 article nav a p::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .communication .comunication2 article nav a p:hover {
+    background-color: black;
+    color: white;
+  }
+  main .communication .comunication2 section {
+    width: 50%;
+  }
+  main .communication .comunication2 section ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .communication .comunication2 section ul li {
+    width: 45%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) {
+    position: relative;
+    top: 50px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a div {
+    margin-bottom: 0;
+  }
+  main .communication .comunication2 section ul li:hover {
+    box-shadow: 0 17px 38px 20px rgba(0, 0, 0, 0.262);
+  }
+  main .communication .comunication2 section ul li:hover {
+    transform: translate(10px, -5px);
+    background-color: #e4007f;
+  }
+  main .communication .comunication2 section ul li:hover p {
+    color: #fff;
+  }
+  main .communication .comunication2 section ul li a div {
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 55px;
+  }
+  main .communication .comunication2 section ul li a div p {
+    font-size: 20px;
+    font-family: "kohib";
+  }
+  main .communication .comunication2 section ul li a div p span {
+    font-size: 13px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(1) a figure {
+    overflow: hidden;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(1) a figure img {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a figure {
+    overflow: hidden;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a figure img {
+    transform: translate(-152px, 10px);
+    width: 200%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(3) {
+    transform: translateY(0px);
+  }
+  main .communication .comunication2 section ul li:nth-of-type(3) a figure img {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) {
+    transform: translateY(80px);
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a {
+    position: relative;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    width: 80px;
+    left: 30px;
+    top: 30px;
+    padding: 0;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div p span {
+    font-family: "kohib";
+    font-size: 18px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a figure img {
+    width: 112%;
+  }
+  main .banner {
+    margin-top: 200px;
+  }
+  main .banner h2 {
+    text-align: center;
+    padding-top: 70px;
+  }
+  main .banner .section1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .banner .section1 .section2 div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  main .banner .section1 .section2 div figure {
+    display: flex;
+  }
+  main .banner .section1 .section2 div figure img {
+    width: 100%;
+  }
+  main .banner .section1 .section2 div .won {
+    display: flex;
+    justify-content: center;
+  }
+  main .banner .section1 .section2 div .won input {
+    margin: 0px 4px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 50px;
+    width: 8px;
+    height: 10px;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  main .banner .section1 .section2 div .won input:checked {
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: #e4007f;
+    width: 40px;
+    height: 10px;
+  }
+  main .banner .section1 .section2 div .won input:nth-of-type(1):checked ~ div > figure {
+    transform: translateX(0%);
+  }
+  main .banner .section1 .section2 div .won input:nth-of-type(2):checked ~ div > figure {
+    transform: translateX(-200%);
+  }
+  main .banner .alim {
+    text-align: center;
+  }
+  main .banner .alim a {
+    display: inline-block;
+    margin: 30px auto;
+    position: relative;
+    border: 3px solid black;
+    padding: 10px 40px 10px 80px;
+    border-radius: 20px;
+  }
+  main .banner .alim a::before {
+    position: absolute;
+    content: "";
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_11.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  .footer1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer1 .footer1_1 {
+    width: 100%;
+  }
+  .footer1 .footer1_1 li {
+    margin-left: 150px;
+    display: flex;
+  }
+  .footer1 .footer1_1 li a {
+    font-size: 16px;
+    border-right: 1px solid gray;
+    display: flex;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .footer1 .footer1_1 li a:nth-of-type(1) {
+    border-left: 1px solid gray;
+  }
+  .footer1 .footer1_1 li a::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../imgs/main/ico_arrow_down_b.png) no-repeat;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  .footer1 section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 .footer_left {
+    width: 50%;
+    margin: 0;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 {
+    display: flex;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li {
+    margin-top: 50px;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) {
+    width: 30%;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) a img {
+    width: 80%;
+  }
+  .footer1 section .footer2 .footer_left p.just {
+    margin-top: 50px;
+  }
+  .footer1 section .footer2 .footer_left .ab {
+    text-decoration: underline;
+    color: #1b8edf;
+  }
+  .footer1 section .footer2 .footer_right {
+    width: 45%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer1 section .footer2 .footer_right ul.right1 {
+    text-align: end;
+  }
+  .footer1 section .footer2 .footer_right ul.right2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer1 section .footer2 .footer_right ul.right2 li:nth-of-type(2) a p {
+    font-size: 34px;
+  }
+  .footer1 section .footer2 .footer_right ul.right3 {
+    text-align: end;
+  }
+  .sag_yanin {
+    position: fixed;
+    left: 100px;
+    top: 300px;
+    height: 300px;
+  }
+  .sag_yanin li {
+    background: url(../imgs/main/ico_bugi_w.svg) no-repeat;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 0.2em 0.4em;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    margin: 40px 0;
+  }
+  .sol_yanin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+    background-color: white;
+    border-color: white;
+  }
+  .sol_yanin span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "InkLipquid";
+    background-color: white;
+  }
+  .sol_yanin::before {
+    content: "";
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to right, #eb6ea5 0, #e4007f 30%, #601986 70%);
+    /*첫번째 색깔을 0,두번째색깔을 30%,세번째 색을70% 그라데이션으로 넣어준다 */
+  }
+  header section {
+    width: 94%;
+    margin: 0 auto;
+  }
+  header section .busanisgood {
+    width: 8%;
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 2px;
+  }
+  header section .busanisgood img {
+    width: 100%;
+  }
+  header section .header1_1 {
+    display: none;
+    font-size: 18px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+  }
+  header section .header1_1 a {
+    margin-left: auto;
+  }
+  header section .header1_1 a:hover {
+    color: #e4007f;
+  }
+  header section .header1_2 {
+    display: none;
+    justify-content: flex-end;
+    color: white;
+    transform: translateY(-30px);
+  }
+  header section .header1_3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: white;
+  }
+  header section .header1_3 a {
+    margin: 5px 10px;
+  }
+  header section .header1_3 a:nth-of-type(1) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(2) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(3) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(4) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(5) {
+    display: block;
+  }
+  header section .header1_3 a:nth-of-type(6) {
+    display: block;
+  }
+  header section .header1_3 a:nth-of-type(7) {
+    display: block;
+  }
+  header section .header1_3 a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  header a {
+    color: white;
+  }
+  .bugi_img figure {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .bugi_img figure img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bugi_img .trans {
+    transform: translate(100px, -250px);
+    display: inline-block;
+  }
+  .bugi_img .trans figure {
+    padding: 5px 10px;
+    transform: translateX(-100px) translateY(100px);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .bugi_img .trans figure img {
+    width: 36.7%;
+    padding: 5px 10px;
+  }
+  .bugi_img .trans figure a img {
+    width: 100%;
+  }
+  .bugi_img button {
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-200px);
+    cursor: pointer;
+  }
+  .bugi_img button img {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .guideall .guide {
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 50px;
+  }
+  main .guideall .guide h2 {
+    text-align: center;
+  }
+  main .guideall .guide nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .guideall .guide nav a {
+    border: 1px solid black;
+    color: black;
+    font-size: 12px;
+    margin: 2px 3px;
+    padding: 5px 12px;
+    border-radius: 80px;
+    transition: 1s;
+  }
+  main .guideall .guide nav a::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .guideall .guide nav a:hover {
+    color: white;
+    background-color: #e4007f;
+  }
+  main .guideall .guide nav a span {
+    display: inline-block;
+    color: #1b8edf;
+    font-size: 8px;
+  }
+  main .guideall .guide nav a span:nth-of-type(2) {
+    color: black;
+    font-size: 12px;
+  }
+  main .guideall .guide2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .guideall .guide2 > div {
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+  main .guideall .guide2 > div:hover {
+    transform: translate(-5px, -10px);
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to left, red 0%, blue 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box; /*여기*/
+  }
+  main .guideall .guide2 .guide2_1 {
+    padding: 35px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .guideall .guide2 .guide2_1 p {
+    display: flex;
+    justify-content: space-between;
+    font-family: "kohib";
+    font-size: 24px;
+    color: #585858;
+  }
+  main .guideall .guide2 .guide2_1 p::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background: url("../imgs/main/ico_news.svg") no-repeat;
+    background-size: 100%;
+  }
+  main .guideall .guide2 .guide2_1 nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .guideall .guide2 .guide2_1 nav a {
+    width: calc(50% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a:nth-of-type(1), main .guideall .guide2 .guide2_1 nav a:nth-of-type(3) {
+    margin-left: 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a:nth-of-type(2), main .guideall .guide2 .guide2_1 nav a:nth-of-type(4) {
+    margin-right: 0;
+  }
+  main .guideall .guide2_2 {
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .guideall .guide2_2 nav a {
+    padding: 30px 50px 80px;
+    display: block;
+  }
+  main .guideall .guide2_2 nav a p {
+    color: #585858;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(1) {
+    font-family: "kohib";
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(1)::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background: url("../imgs/main/ico_calender.svg") no-repeat;
+    background-size: 100%;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(2) {
+    white-space: pre-line;
+    font-size: 14px;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(2)::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 1px solid #585858;
+    display: block;
+    border-radius: 50%;
+    background: url("../imgs/main/ico_arrow_right_b.svg") no-repeat;
+    background-position: center center;
+    margin-top: 20px;
+  }
+  main .guideall .guide2_3 {
+    height: 267px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    background: url("../imgs/main/tour_thum.jpg") no-repeat;
+    background-size: cover;
+  }
+  main .guideall .guide2_3 div {
+    display: flex;
+    padding: 35px 25px;
+  }
+  main .guideall .guide2_3 div p {
+    color: #fff;
+    font-family: "kohib";
+    font-size: 24px;
+  }
+  main .guideall .guide2_3 nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .guideall .guide2_3 nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #585858;
+    background-color: white;
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
+    margin: 5px;
+  }
+  main .guideall .guide2_4 {
+    margin: 0;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    background: url("../imgs/main/bg_mayor_ver9.jpg") no-repeat;
+    background-size: cover;
+  }
+  main .guideall .guide2_4 div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 25px 25px;
+  }
+  main .guideall .guide2_4 div p {
+    margin-top: 30px;
+    margin-bottom: 110px;
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  main .guideall .guide2_4 div p span {
+    font-size: 13px;
+  }
+  main .guideall .guide2_4 div nav {
+    width: 110%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateX(20px);
+  }
+  main .guideall .guide2_4 div nav a {
+    display: block;
+    width: calc(50% - 2px);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 1px;
+    padding: 3px 10px;
+  }
+  main .guideall .guide2_4 div nav a::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .guideall .guide3 {
+    width: 100%;
+  }
+  main .guideall .guide3 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+  }
+  main .guideall .guide3 ul li {
+    padding: 20px 10px;
+  }
+  main .guideall .guide3 ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .guideall .guide3 ul li img {
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 1s;
+  }
+  main .guideall .guide3 ul li img:hover {
+    transform: rotateY(360deg);
+  }
+  main .information {
+    margin-top: 200px;
+  }
+  main .information h2 {
+    text-align: center;
+  }
+  main .information section {
+    margin: 0 auto;
+    width: 80%;
+  }
+  main .information section div {
+    width: 30%;
+    margin: 30px 0px;
+  }
+  main .information section div a {
+    display: flex;
+    justify-content: space-between;
+    font-family: "kohib";
+    font-size: 20px;
+  }
+  main .information section div a span {
+    font-family: "Noto Sans KR", sans-serif;
+    vertical-align: center;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+  }
+  main .information section div a span::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .information section div a:hover span {
+    background-color: black;
+    color: white;
+  }
+  main .information section .information2 {
+    padding: 0;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .information section .information2 li {
+    padding: 30px;
+    width: 30%;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .information section .information2 li:hover {
+    transform: translate(-5px, -10px);
+  }
+  main .information section .information2 li a p:nth-of-type(1) {
+    font-size: 18px;
+  }
+  main .information section .information2 li a p:nth-of-type(2) {
+    font-size: 13px;
+  }
+  main .information section .information2 li a p:nth-of-type(2) {
+    font-size: 13px;
+  }
+  main .information .information3 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .information .information3 a {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    padding-bottom: 50px;
+    border-bottom: 5px solid gray;
+  }
+  main .information .information3 a p {
+    font-family: "kohib";
+    font-size: 20px;
+    color: gray;
+  }
+  main .information .information3 a span {
+    vertical-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    line-height: 3%;
+    vertical-align: center;
+  }
+  main .information .information3 a span::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .information .information3 a:hover span {
+    background-color: black;
+    color: white;
+  }
+  main .communication {
+    margin-top: 0px;
+  }
+  main .communication h2 {
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 20px;
+  }
+  main .communication .comunication2 {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main .communication .comunication2 article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  main .communication .comunication2 article p {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 50px;
+  }
+  main .communication .comunication2 article nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .communication .comunication2 article nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(1) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_mic.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(2) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_note.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(3) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_11.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(4) p {
+    padding: 10px 30px 10px 70px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(4) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_youtube.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(5) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(6) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(7) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(8) p {
+    padding: 10px 30px 10px 70px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(8) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_wroldExpo.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(9) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_bugi_w.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(10) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_graph.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(11) p {
+    padding: 10px 30px 10px 70px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(11) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_10.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(12) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_10.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(13) p {
+    padding: 10px 30px 10px 120px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(13) p::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: url("../imgs/main/media-hub-eng.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 10px 30px 10px 50px;
+    margin: 2px;
+  }
+  main .communication .comunication2 article nav a p::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .communication .comunication2 article nav a p:hover {
+    background-color: black;
+    color: white;
+  }
+  main .communication .comunication2 section {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .communication .comunication2 section ul li {
+    width: 45%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) {
+    position: relative;
+    top: 50px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a div {
+    margin-bottom: 0;
+  }
+  main .communication .comunication2 section ul li:hover {
+    box-shadow: 0 17px 38px 20px rgba(0, 0, 0, 0.262);
+  }
+  main .communication .comunication2 section ul li:hover {
+    transform: translate(10px, -5px);
+    background-color: #e4007f;
+  }
+  main .communication .comunication2 section ul li:hover p {
+    color: #fff;
+  }
+  main .communication .comunication2 section ul li a div {
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 55px;
+  }
+  main .communication .comunication2 section ul li a div p {
+    font-size: 20px;
+    font-family: "kohib";
+  }
+  main .communication .comunication2 section ul li a div p span {
+    font-size: 13px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(1) a figure {
+    overflow: hidden;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(1) a figure img {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a figure {
+    overflow: hidden;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a figure img {
+    transform: translate(-152px, 10px);
+    width: 200%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(3) {
+    transform: translateY(0px);
+  }
+  main .communication .comunication2 section ul li:nth-of-type(3) a figure img {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) {
+    transform: translateY(80px);
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a {
+    position: relative;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    width: 80px;
+    left: 30px;
+    top: 30px;
+    padding: 0;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div p span {
+    font-family: "kohib";
+    font-size: 18px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a figure img {
+    width: 112%;
+  }
+  main .banner {
+    margin-top: 200px;
+  }
+  main .banner h2 {
+    text-align: center;
+    padding-top: 70px;
+  }
+  main .banner .section1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .banner .section1 .section2 div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  main .banner .section1 .section2 div figure {
+    display: flex;
+  }
+  main .banner .section1 .section2 div figure img {
+    width: 100%;
+  }
+  main .banner .section1 .section2 div .won {
+    display: flex;
+    justify-content: center;
+  }
+  main .banner .section1 .section2 div .won input {
+    margin: 0px 4px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 50px;
+    width: 8px;
+    height: 10px;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  main .banner .section1 .section2 div .won input:checked {
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: #e4007f;
+    width: 40px;
+    height: 10px;
+  }
+  main .banner .section1 .section2 div .won input:nth-of-type(1):checked ~ div > figure {
+    transform: translateX(0%);
+  }
+  main .banner .section1 .section2 div .won input:nth-of-type(2):checked ~ div > figure {
+    transform: translateX(-200%);
+  }
+  main .banner .alim {
+    text-align: center;
+  }
+  main .banner .alim a {
+    display: inline-block;
+    margin: 30px auto;
+    position: relative;
+    border: 3px solid black;
+    padding: 10px 40px 10px 80px;
+    border-radius: 20px;
+  }
+  main .banner .alim a::before {
+    position: absolute;
+    content: "";
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_11.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  .footer1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer1 div {
+    border: 0;
+  }
+  .footer1 div .footer1_1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 div .footer1_1 li {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer1 div .footer1_1 li a {
+    border: 1px solid gray;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .footer1 div .footer1_1 li a:nth-of-type(1) {
+    border-bottom: 0;
+  }
+  .footer1 div .footer1_1 li a::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../imgs/main/ico_arrow_down_b.png) no-repeat;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  .footer1 section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 .footer_left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 .footer_left ul.left1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer1 section .footer2 .footer_left ul.left1 li a {
+    font-size: 12.75px;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) {
+    width: 30%;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) a img {
+    width: 60%;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1):nth-of-type(2) p {
+    font-size: 12.75px;
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_left .just {
+    margin-top: 0px;
+    font-size: 12.75px;
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_left .ab {
+    font-size: 12.75px;
+    text-decoration: underline;
+    color: #1b8edf;
+  }
+  .footer1 section .footer2 .footer_right {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer1 section .footer2 .footer_right ul.right1 {
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_right ul.right1 li a img {
+    width: 50%;
+  }
+  .footer1 section .footer2 .footer_right ul.right2 {
+    margin-top: 10px;
+    font-size: 12.75px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer1 section .footer2 .footer_right ul.right2 li:nth-of-type(2) a p {
+    font-size: 31.875px;
+  }
+  .footer1 section .footer2 .footer_right ul.right3 {
+    text-align: center;
+    font-size: 12.75px;
+  }
+  .footer1 section .footer2 .footer_right ul.right3 li:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .sag_yanin {
+    display: none;
+    position: fixed;
+    left: 100px;
+    top: 300px;
+    height: 300px;
+  }
+  .sag_yanin li {
+    background: url(../imgs/main/ico_bugi_w.svg) no-repeat;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 0.2em 0.4em;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    margin: 40px 0;
+  }
+  .sol_yanin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+    background-color: white;
+    border-color: white;
+  }
+  .sol_yanin span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "InkLipquid";
+    background-color: white;
+  }
+  .sol_yanin::before {
+    content: "";
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    height: 100%;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to right, #eb6ea5 0, #e4007f 30%, #601986 70%);
+    /*첫번째 색깔을 0,두번째색깔을 30%,세번째 색을70% 그라데이션으로 넣어준다 */
+  }
+  header section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header section .busanisgood {
+    width: 18%;
+    display: block;
+    position: relative;
+    left: 30px;
+    top: 2px;
+    padding-top: 5px;
+  }
+  header section .busanisgood img {
+    width: 100%;
+  }
+  header section .header1_1 {
+    display: none;
+    font-size: 18px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+  }
+  header section .header1_1 a {
+    margin-left: auto;
+  }
+  header section .header1_1 a:hover {
+    color: #e4007f;
+  }
+  header section .header1_2 {
+    display: none;
+    justify-content: flex-end;
+    color: white;
+    transform: translateY(-30px);
+  }
+  header section .header1_3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: white;
+  }
+  header section .header1_3 a {
+    margin: 15px 10px;
+  }
+  header section .header1_3 a:nth-of-type(1) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(2) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(3) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(4) {
+    display: none;
+  }
+  header section .header1_3 a:nth-of-type(5) {
+    display: block;
+  }
+  header section .header1_3 a:nth-of-type(6) {
+    display: block;
+  }
+  header section .header1_3 a:nth-of-type(7) {
+    display: block;
+  }
+  header section .header1_3 a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  header a {
+    color: white;
+  }
+  .bugi_img > figure {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateY(80px);
+  }
+  .bugi_img > figure img:nth-of-type(1) {
+    display: none;
+  }
+  .bugi_img > figure img:nth-of-type(2) {
+    display: block;
+  }
+  .bugi_img .trans {
+    transform: translate(100px, -250px);
+    display: inline-block;
+  }
+  .bugi_img .trans figure {
+    padding: 5px 10px;
+    transform: translateX(-100px) translateY(200px);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .bugi_img .trans figure img {
+    width: 36.7%;
+    padding: 5px 10px;
+  }
+  .bugi_img .trans figure a img {
+    width: 100%;
+  }
+  .bugi_img button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+    transform: translateY(-250px);
+    cursor: pointer;
+  }
+  .bugi_img button img {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .guideall .guide {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  main .guideall .guide h2 {
+    text-align: center;
+    height: 25px;
+  }
+  main .guideall .guide nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .guideall .guide nav a {
+    border: 1px solid black;
+    color: black;
+    font-size: 12px;
+    margin: 2px 3px;
+    padding: 5px 12px;
+    border-radius: 80px;
+    transition: 1s;
+  }
+  main .guideall .guide nav a::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .guideall .guide nav a:hover {
+    color: white;
+    background-color: #e4007f;
+  }
+  main .guideall .guide nav a span {
+    display: inline-block;
+    color: #1b8edf;
+    font-size: 8px;
+  }
+  main .guideall .guide nav a span:nth-of-type(2) {
+    color: black;
+    font-size: 12px;
+  }
+  main .guideall .guide2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .guideall .guide2 > div {
+    width: 288px;
+    position: relative;
+    margin: 0 auto;
+  }
+  main .guideall .guide2 > div:hover {
+    transform: translate(-5px, -10px);
+    border: 3px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to left, red 0%, blue 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box; /*여기*/
+  }
+  main .guideall .guide2 .guide2_1 {
+    padding: 35px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .guideall .guide2 .guide2_1 p {
+    display: flex;
+    transform: translateY(-20px);
+    font-family: "kohib";
+    font-size: 17px;
+    color: #585858;
+  }
+  main .guideall .guide2 .guide2_1 p::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background: url("../imgs/main/ico_news.svg") no-repeat;
+    background-size: 100%;
+  }
+  main .guideall .guide2 .guide2_1 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .guideall .guide2 .guide2_1 nav a {
+    width: calc(50% - 20px);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a:nth-of-type(1), main .guideall .guide2 .guide2_1 nav a:nth-of-type(3) {
+    margin-left: 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a:nth-of-type(2), main .guideall .guide2 .guide2_1 nav a:nth-of-type(4) {
+    margin-right: 0;
+  }
+  main .guideall .guide2 .guide2_1 nav a img {
+    width: 100%;
+    padding: 0px 5px;
+  }
+  main .guideall .guide2_2 {
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .guideall .guide2_2 nav a {
+    padding: 30px 50px 80px;
+    display: block;
+  }
+  main .guideall .guide2_2 nav a p {
+    color: #585858;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(1) {
+    font-family: "kohib";
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(1)::after {
+    display: block;
+    width: 60px;
+    height: 60px;
+    content: "";
+    background: url("../imgs/main/ico_calender.svg") no-repeat;
+    background-size: 100%;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(2) {
+    white-space: pre-line;
+    font-size: 14px;
+  }
+  main .guideall .guide2_2 nav a p:nth-of-type(2)::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 1px solid #585858;
+    display: block;
+    border-radius: 50%;
+    background: url("../imgs/main/ico_arrow_right_b.svg") no-repeat;
+    background-position: center center;
+    margin-top: 20px;
+  }
+  main .guideall .guide2_3 {
+    height: 80px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    background: url("../imgs/main/tour_thum.jpg") no-repeat;
+    background-size: cover;
+  }
+  main .guideall .guide2_3 div {
+    display: flex;
+    padding: 35px 25px;
+  }
+  main .guideall .guide2_3 div p {
+    display: none;
+    color: #fff;
+    font-family: "kohib";
+    font-size: 24px;
+  }
+  main .guideall .guide2_3 nav {
+    display: flex;
+    flex-wrap: nowrap;
+    transform: translate(-20px, -25px);
+  }
+  main .guideall .guide2_3 nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #585858;
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+  }
+  main .guideall .guide2_3 nav a img {
+    width: 100%;
+  }
+  main .guideall .guide2_4 {
+    margin: 0;
+    width: 288px;
+    height: 140px;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    background: url("../imgs/main/bg_mayor_ver9.jpg") no-repeat;
+    background-size: cover;
+  }
+  main .guideall .guide2_4 div {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 25px 25px;
+  }
+  main .guideall .guide2_4 div p {
+    margin-top: 30px;
+    transform: translate(0px, -40px);
+    font-size: 18px;
+    color: whitesmoke;
+  }
+  main .guideall .guide2_4 div p span {
+    font-size: 13px;
+  }
+  main .guideall .guide2_4 div nav {
+    width: 110%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translate(20px, -110px);
+  }
+  main .guideall .guide2_4 div nav a {
+    display: block;
+    width: calc(50% - 2px);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 1px;
+    padding: 3px 10px;
+  }
+  main .guideall .guide2_4 div nav a::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .guideall .guide3 {
+    width: 100%;
+  }
+  main .guideall .guide3 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+  }
+  main .guideall .guide3 ul li {
+    padding: 20px 10px;
+  }
+  main .guideall .guide3 ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .guideall .guide3 ul li img {
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 1s;
+  }
+  main .guideall .guide3 ul li img:hover {
+    transform: rotateY(360deg);
+  }
+  main .information {
+    margin-top: 200px;
+  }
+  main .information h2 {
+    text-align: center;
+  }
+  main .information section {
+    margin: 0 auto;
+    width: 80%;
+  }
+  main .information section div {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  main .information section div a {
+    display: flex;
+    justify-content: space-between;
+    font-family: "kohib";
+    font-size: 17px;
+  }
+  main .information section div a span {
+    font-family: "Noto Sans KR", sans-serif;
+    vertical-align: center;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+  }
+  main .information section div a span::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .information section div a:hover span {
+    background-color: black;
+    color: white;
+  }
+  main .information section .information2 {
+    padding: 0;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main .information section .information2 li {
+    padding: 30px;
+    width: 30%;
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+  }
+  main .information section .information2 li:hover {
+    transform: translate(-5px, -10px);
+  }
+  main .information section .information2 li a p:nth-of-type(1) {
+    font-size: 18px;
+  }
+  main .information section .information2 li a p:nth-of-type(2) {
+    font-size: 13px;
+  }
+  main .information section .information2 li a p:nth-of-type(2) {
+    font-size: 13px;
+  }
+  main .information .information3 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .information .information3 a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0px;
+    border-bottom: 3px solid gray;
+    margin-bottom: 50px;
+  }
+  main .information .information3 a p {
+    font-family: "kohib";
+    font-size: 17px;
+    color: gray;
+  }
+  main .information .information3 a span {
+    vertical-align: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 5px 10px;
+    line-height: 3%;
+    vertical-align: center;
+  }
+  main .information .information3 a span::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .information .information3 a:hover span {
+    background-color: black;
+    color: white;
+  }
+  main .communication {
+    margin-top: 0px;
+  }
+  main .communication h2 {
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 10px;
+  }
+  main .communication .comunication2 {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main .communication .comunication2 article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  main .communication .comunication2 article p {
+    display: none;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 50px;
+  }
+  main .communication .comunication2 article nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .communication .comunication2 article nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(1) p {
+    padding: 5px 21px 7px 38px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(1) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_mic.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(2) p {
+    padding: 5px 21px 7px 38px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(2) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_note.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(3) p {
+    padding: 5px 21px 7px 38px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(3) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_11.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(4) p {
+    padding: 5px 10px 10px 58px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(4) p::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: url("../imgs/main/ico_youtube.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(5) p {
+    padding: 8px 9px 10px 38px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(5) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(6) p {
+    padding: 8px 9px 10px 38px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(6) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(7) p {
+    padding: 8px 9px 10px 38px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(7) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_facebook.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(8) p {
+    padding: 8px 9px 10px 50px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(8) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_wroldExpo.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(9) p {
+    padding: 8px 9px 10px 40px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(9) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_bugi_w.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(10) p {
+    padding: 8px 9px 10px 40px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(10) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/ico_graph.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(11) p {
+    padding: 8px 9px 5px 40px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(11) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_10.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(12) p {
+    padding: 8px 9px 5px 45px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(12) p::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_10.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(13) p {
+    padding: 8px 9px 10px 90px;
+  }
+  main .communication .comunication2 article nav a:nth-of-type(13) p::before {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: url("../imgs/main/media-hub-eng.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  main .communication .comunication2 article nav a p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 10px 30px 10px 50px;
+    margin: 2px;
+  }
+  main .communication .comunication2 article nav a p::after {
+    content: "add";
+    font-family: "material symbols outlined";
+  }
+  main .communication .comunication2 article nav a p:hover {
+    background-color: black;
+    color: white;
+  }
+  main .communication .comunication2 section {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .communication .comunication2 section ul li {
+    width: 45%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) {
+    position: relative;
+    top: 50px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a div {
+    margin-bottom: 0;
+  }
+  main .communication .comunication2 section ul li:hover {
+    box-shadow: 0 17px 38px 20px rgba(0, 0, 0, 0.262);
+  }
+  main .communication .comunication2 section ul li:hover {
+    transform: translate(10px, -5px);
+    background-color: #e4007f;
+  }
+  main .communication .comunication2 section ul li:hover p {
+    color: #fff;
+  }
+  main .communication .comunication2 section ul li a div {
+    padding-top: 30px;
+    padding-left: 15px;
+    margin-bottom: 55px;
+  }
+  main .communication .comunication2 section ul li a div p {
+    font-size: 20px;
+    font-family: "kohib";
+  }
+  main .communication .comunication2 section ul li a div p span {
+    font-size: 13px;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(1) a figure {
+    overflow: hidden;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(1) a figure img {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a figure {
+    overflow: hidden;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(2) a figure img {
+    transform: translate(-152px, 10px);
+    width: 200%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(3) {
+    transform: translateY(0px);
+  }
+  main .communication .comunication2 section ul li:nth-of-type(3) a figure img {
+    width: 100%;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) {
+    transform: translateY(80px);
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a {
+    position: relative;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    width: 80px;
+    left: 30px;
+    top: 30px;
+    padding: 0;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a div p span {
+    font-family: "kohib";
+    font-size: 18px;
+  }
+  main .communication .comunication2 section ul li:nth-of-type(4) a figure img {
+    width: 112%;
+  }
+  main .banner {
+    margin-top: 50px;
+  }
+  main .banner h2 {
+    text-align: center;
+    padding-top: 0px;
+  }
+  main .banner .section1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .banner .section1 .section2 div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  main .banner .section1 .section2 div figure {
+    display: flex;
+  }
+  main .banner .section1 .section2 div figure img {
+    width: 100%;
+  }
+  main .banner .section1 .section2 div .won {
+    display: flex;
+    justify-content: center;
+  }
+  main .banner .section1 .section2 div .won input {
+    margin: 0px 4px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border-radius: 50px;
+    width: 8px;
+    height: 10px;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  main .banner .section1 .section2 div .won input:checked {
+    border: 3px solid black;
+    border-radius: 50px;
+    background-color: #e4007f;
+    width: 40px;
+    height: 10px;
+  }
+  main .banner .section1 .section2 div .won input:nth-of-type(1):checked ~ div > figure {
+    transform: translateX(0%);
+  }
+  main .banner .section1 .section2 div .won input:nth-of-type(2):checked ~ div > figure {
+    transform: translateX(-200%);
+  }
+  main .banner .alim {
+    text-align: center;
+  }
+  main .banner .alim a {
+    display: inline-block;
+    margin: 30px auto;
+    position: relative;
+    border: 3px solid black;
+    padding: 10px 40px 10px 80px;
+    border-radius: 20px;
+  }
+  main .banner .alim a::before {
+    position: absolute;
+    content: "";
+    width: 75%;
+    height: 75%;
+    background: url("../imgs/main/icon_11.svg") no-repeat;
+    display: block;
+    background-size: contain;
+    left: 15px;
+  }
+  .footer1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer1 div {
+    border: 0;
+  }
+  .footer1 div .footer1_1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 div .footer1_1 li {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer1 div .footer1_1 li a {
+    border: 1px solid gray;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .footer1 div .footer1_1 li a:nth-of-type(1) {
+    border-bottom: 0;
+  }
+  .footer1 div .footer1_1 li a::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../imgs/main/ico_arrow_down_b.png) no-repeat;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  .footer1 section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 .footer_left {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer1 section .footer2 .footer_left ul.left1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer1 section .footer2 .footer_left ul.left1 li a {
+    font-size: 12.75px;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) {
+    width: 30%;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1) a img {
+    width: 60%;
+  }
+  .footer1 section .footer2 .footer_left ul.left2 li:nth-of-type(1):nth-of-type(2) p {
+    font-size: 12.75px;
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_left .just {
+    margin-top: 0px;
+    font-size: 12.75px;
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_left .ab {
+    font-size: 12.75px;
+    text-decoration: underline;
+    color: #1b8edf;
+  }
+  .footer1 section .footer2 .footer_right {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer1 section .footer2 .footer_right ul.right1 {
+    text-align: center;
+  }
+  .footer1 section .footer2 .footer_right ul.right1 li a img {
+    width: 50%;
+  }
+  .footer1 section .footer2 .footer_right ul.right2 {
+    margin-top: 10px;
+    font-size: 12.75px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer1 section .footer2 .footer_right ul.right2 li:nth-of-type(2) a p {
+    font-size: 31.875px;
+  }
+  .footer1 section .footer2 .footer_right ul.right3 {
+    text-align: center;
+    font-size: 12.75px;
+  }
+  .footer1 section .footer2 .footer_right ul.right3 li:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .sag_yanin {
+    display: none;
+    position: fixed;
+    left: 100px;
+    top: 300px;
+    height: 300px;
+  }
+  .sag_yanin li {
+    background: url(../imgs/main/ico_bugi_w.svg) no-repeat;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 0.2em 0.4em;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    margin: 40px 0;
+  }
+  .sol_yanin {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+    background-color: white;
+    border-color: white;
+  }
+  .sol_yanin span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "InkLipquid";
+    background-color: white;
+  }
+  .sol_yanin::before {
+    content: "";
+    display: block;
+  }
+}/*# sourceMappingURL=cloen.css.map */

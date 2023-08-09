@@ -1,0 +1,146 @@
+@import url('./reset.css');
+
+header{
+    position: fixed;
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-image:linear-gradient(to right,#eb6ea5 0,#e4007f 30%, #601986 70%) ;
+ }  /*첫번째 색깔을 0,두번째색깔을 30%,세번째 색을70% 그라데이션으로 넣어준다 */
+
+.busanisgood{
+    position:relative;
+    left: 50px; top:15px;
+}
+
+.header1_1{
+    display: flex;
+    font-size: 18px;
+    color: white;
+    width: 50%;
+}
+
+.header1_1 li{
+    margin-left: auto;
+}
+
+.header1_2{
+    display: flex;
+    color: white;
+}
+
+.header1_3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display:flex; 
+    font-size: 15px;
+    color:white;
+}
+
+
+.guide{width: 100%; margin-top: 300px;}
+.guide ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.guide h2{text-align: center;}
+
+
+.guide ul li a{
+    border: 1px solid black;
+    color: black;
+    font-size: 1.2rem;
+    margin: 2px 3px;
+    padding: 5px 12px;
+    border-radius: 80px;
+    transition: 1s;
+    
+}
+
+.guide ul li a span{
+    color: #1b8edf;
+    font-size: 10px;
+}
+
+.guide ul li i{
+    font-family: "material symbols outlined";
+    font-size: 20px;
+    font-style: inherit;
+}
+
+.guide ul li a:hover{
+    color: white;
+    background-color: #e4007f;}
+
+.guide2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+.guide2_1{
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    width: 450px; height: 200px;
+}
+
+.guide2_1 p{
+    font-size: 21px;
+
+}
+
+
+
+.guide2_1 ul{
+display: flex;
+flex-wrap: wrap;
+font-size: 21px;
+
+}
+
+.guide2_1 ul li{
+border: 1px solid gainsboro;
+border-radius: 80px;
+width: 198px; height: 100%;
+text-align: center;
+}
+
+
+.guide2_2{
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    width: 450px; height: 200px;
+    font-size: 21px;
+} 
+
+
+
+.guide2_3{
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    width: 450px; height: 200px;
+    font-size: 21px;
+}
+
+.guide2_4{
+    box-shadow: 1px 1.7px 38px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 20px;
+    width: 450px; height: 200px;
+    font-size: 21px;
+}
+
+
+.guide3 ul{
+    display: flex;
+}

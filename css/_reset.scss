@@ -1,0 +1,30 @@
+ul,li{list-style-type: none; margin: 0; padding:0;}
+body{font-family: 'Noto Sans KR', sans-serif; margin: 0; color: #000;}
+p {margin:0}
+a,a:hover,a:active{text-decoration: none; color:black;}
+*{box-sizing: border-box; }
+figure{margin:0;}
+
+
+
+@font-face{font-family: "kohib"; src:url('../KOHIBaeum.woff2')}
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

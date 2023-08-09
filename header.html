@@ -1,0 +1,116 @@
+
+
+    <section>
+        <a class="busanisgood" href="#">
+            <img class="logos" src="./imgs/main/logo_slogan_kor_w.svg" alt="">
+        </a>
+
+        <div class="header1_1">
+            <ul>
+                <li>
+                    <a class="big" href="#">부산민원120</a>
+                    <ul class="sub_1">
+                        <li> <a href="#"> - 민원신청 </a></li>
+                        <li> <a href="#"> - 제안신청 </a></li>
+                        <li> <a href="#"> - 시민참여 </a></li>
+                        <li> <a href="#"> - 민원안내 </a></li>
+                        <li> <a href="#"> - 120콜센터 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="big" href="#">부산소식</a>
+                    <ul class="sub_1">
+                        <li> <a href="#"> - 새소식 </a></li>
+                        <li> <a href="#"> - 부산시보 </a></li>
+                        <li> <a href="#"> - 보도·해명자료 </a></li>
+                        <li> <a href="#"> - 공고 </a></li>
+                        <li> <a href="#"> - 부산시 공식 SNS </a></li>
+                        <li> <a href="#"> - 시정사진 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="big" href="#">정보공개</a>
+                    <ul class="sub_1">
+                        <li> <a href="#"> - 주요시책 </a></li>
+                        <li> <a href="#"> - 정보공개 </a></li>
+                        <li> <a href="#"> - 예산 </a></li>
+                        <li> <a href="#"> - 감사정보 </a></li>
+                        <li> <a href="#"> - 지방공기업 </a></li>
+                        <li> <a href="#"> - 계약정보 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="big" href="#">부산소개</a>
+                    <ul class="sub_1">
+                        <li><a href="#"> - 부산의 오늘 </a></li>
+                        <li><a href="#"> - 부산의 상징 </a></li>
+                        <li><a href="#"> - 부산시청 안내 </a></li>
+                        <li><a href="#"> - 부산의 인물 </a></li>
+                        <li><a href="#"> - 부산의 역사 </a></li>
+                        <li><a href="#"> - 부산통계 </a></li>
+                        <li><a href="#"> - 도시브랜드 </a></li>
+                        <li><a href="#"> - 주민자치회 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="big" href="info.html">분야별정보</a>
+                    <ul class="sub_1">
+                        <li><a href="#"><img src="./imgs/main/ico_depart12.svg" alt=""> <span>경제 </span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart02.svg" alt="">  <span>일자리·교육</span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart03.svg" alt=""> <span>사회복지 </span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart04.svg" alt=""> <span>보건·건강 </span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart05.svg" alt=""> <span>도시·건축·주택 </span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart06.svg" alt=""> <span>안전</span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart07.svg" alt=""> <span>환경보호</span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart08.svg" alt=""> <span>교통·물류</span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart10.svg" alt=""> <span>해양농수산</span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart13.svg" alt=""> <span>행정</span></a></li>
+                        <li><a href="#"><img src="./imgs/main/ico_depart14.svg" alt=""> <span>문화체육관광</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="header1_2">
+            <a class = "search" href="#"><img src="./imgs/main/ico_search_w.png" alt=""></a>
+            <a href="#"><span class="material-symbols-outlined">menu</span></a>
+        </div>
+
+        <div class="header1_3">
+            <a class="a1_3" href="#">로그인</a>
+            <a class="a1_3" href="#">회원가입</a>
+            <a class="a1_3" href="#">행정전화번호부</a>
+            <a class="a1_3" href="#">사이트맵</a>
+            <a class="a1_3" href="#">Kor</a>
+            <a class="a1_3" href=""><img src="./imgs/main/ico_arrow_down_w.png" alt=""></a> 
+            <a href="#">메뉴</a>
+        </div>
+    </section>
+
+
+<script>
+$('.header1_1').on('mouseenter',function(){
+    $(".sub_1").stop().slideDown()
+    $(".sublar").stop().slideDown()
+    $('header').addClass('active')
+    $('.logos').attr('src','./imgs/main/logo_slogan_kor.svg')
+    $('.a1_3').css("color","#222")
+    $('.search').attr('src','./imgs/main/ico_search_b.png')
+    $('.big').css("color","#222")
+})
+
+$('.header1_1').on('mouseleave',function(){
+    $(".sub_1").stop().slideUp()
+    $(".sublar").stop().slideUp()
+    $('header').removeClass('active')
+    $('.logos').attr('src','./imgs/main/logo_slogan_kor_w.svg')
+    $('.a1_3').css("color","white")
+    $('.search').attr('src','./imgs/main/ico_search_w.png')
+    $('.big').css("color","white")
+    
+})
+
+
+
+
+</script>
